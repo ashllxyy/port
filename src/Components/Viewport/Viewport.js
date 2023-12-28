@@ -18,7 +18,7 @@ export default function Viewport() {
     }, []);
     
   return (
-    <div>
+    <div className='viewport'>
       <Landing scrollDistance={scrollDistance} />
     </div>
   )
