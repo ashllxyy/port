@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Libre+Barcode+128+Text&family=Merriweather:ital@1&display=swap');
+
+.date-today{
+    position: fixed;
+    top: 5%;  
+    right: 10%;
+    color: white;
+    width: max-content;
+    z-index: 1;
+}
+
+.date-today h1{
+    text-align: right;
+    font-size: 5vw;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+}
+
+.day{
+    font-size: 6vw;
+}
+
+.year{
+    font-size: 0.9vw;
+    color: rgb(247, 46, 106);
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 100;
+}

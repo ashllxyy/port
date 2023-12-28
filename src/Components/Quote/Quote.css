@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia&family=Libre+Barcode+128+Text&family=Merriweather:ital@1&display=swap');
+
+.quote{
+    width: max-content;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.banner{
+    background-color: rgb(247, 46, 106);
+    position: absolute;
+    left: -5%;
+    height: 100%;
+    width: 1%;
+    z-index: -1;
+    animation: extendBanner 2s ease-in-out infinite;
+}
+
+@keyframes extendBanner {
+    0%, 100% {
+        width: 1%;
+    }
+    50% {
+        width: 10%;
+    }
+}
+
+.symbol{
+    font-size: 50%;
+    margin-left: 5%;
+    font-family: 'Google Sans', sans-serif;
+}
+
+.heading{
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
+
+.sub-heading{
+    font-weight: 100;
+    margin: 0;
+}

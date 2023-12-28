@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.container{
+    letter-spacing: -20px;
+    font-size: 250px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-container{
+    letter-spacing: 200px;
+    font-size: 250px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes hoverAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.a, .b, .c, .d {
+    animation: hoverAnimation infinite;
+    animation-duration: 1s; /* Adjust the duration as needed */
+    animation-delay: var(--delay); /* Add different delays for each class */
+}
+
+.a{
+    font-size:120%;
+    color: rgb(247, 46, 106);
+    z-index: 4;
+    letter-spacing: -30px;
+    transition: all 0.3s ease-in-out;
+    --delay: 0s;
+}
+
+.b{
+    font-size: 110%;
+    color: rgb(185, 30, 76);
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+    --delay: 0.1s;
+}
+
+.c{
+    font-size: 100%;
+    color: rgb(133, 22, 55);
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    --delay: 0.2s;
+}
+
+.d{
+    font-size: 85%;
+    color: rgb(94, 7, 35);
+    z-index: 1;
+    letter-spacing: -15px;
+    transition: all 0.3s ease-in-out;
+    --delay: 0.3s;
+}       
+
+.inside{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 400;
+    z-index: 6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.animated-inside{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    opacity: 0;
+    font-size: 80px;
+    font-weight: 400;
+    z-index: 6;
+    font-family: 'Poppins', sans-serif;
+}
+.inside-letter{
+    position: relative;
+    color: white;
+    letter-spacing: -5px;
+}
+
+.a-inside{
+    font-size:120%;
+    color: rgb(243, 243, 243);
+}
+
+.b-inside{
+    font-size: 110%;
+    color: rgb(212, 212, 212);
+}
+
+.c-inside{
+    font-size: 110%;
+    color: rgb(194, 194, 194);
+}
+
+.d-inside{
+    font-size: 90%;
+    color: rgb(190, 190, 190);
+}    
+

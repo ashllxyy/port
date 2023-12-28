@@ -1,0 +1,45 @@
+nav {
+    position: fixed;
+    z-index: 10;
+}
+
+ul {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+  
+li {
+    position: relative; /* Added for positioning the ::before pseudo-element */
+    margin: 20% 30%;
+}
+  
+a {
+    text-decoration: none;
+    color: rgb(247, 46, 106);
+    transition: 0.5s;
+    border-radius: 20px;
+    position: relative; /* Added for stacking context */
+}
+  
+a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #fff;
+    transition: width 0.5s; /* Added transition for the width property */
+}
+  
+a:hover::before {
+    width: 100%; /* Set the width to 100% on hover */
+}
+  
+a:hover {
+    color: #fff;
+}
+  
